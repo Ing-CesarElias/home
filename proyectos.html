@@ -7,6 +7,75 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles2.css">
+    <style>
+      body {
+          font-family: 'Roboto', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f5f5;
+      }
+      .video-container {
+          position: relative;
+          width: 100%;
+          height: 100vh;
+          overflow: hidden;
+      }
+      .video-container video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+      .video-container .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          text-align: center;
+          padding: 20px;
+      }
+      .card-container {
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      .card {
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          max-width: 300px;
+          margin: 10px;
+          flex: 1 1 300px;
+      }
+      .card img {
+          width: 100%;
+          height: auto;
+      }
+      .card-content {
+          padding: 15px;
+      }
+      .card-category {
+          color: #00a1e0;
+          font-size: 14px;
+          margin-bottom: 10px;
+      }
+      .card-title {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 10px;
+      }
+      .card-location {
+          font-size: 14px;
+          color: #666;
+      }
+  </style>
 </head>
 <body>
     
@@ -36,7 +105,7 @@
                       <a class="nav-link" href="manejo.html">Manejo de programas </a>
                   </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="acerca.html">Acerca de mí</a>
+                        <a class="nav-link" href="acerca.html">Acerca de</a>
                     </li>
                 </ul>
             </div>
@@ -76,111 +145,6 @@
       
 
 
-
-
-    <section class="services">
-        <div class="container">
-
-            <div class="row">
-
-                    <div class="col-12 col-md-12 col-lg-4 mb-3">
-                      <div class="card text-white text-center bg-car1 pb-2">
-                          <div class="card-body">
-                              <h3 class="card-title">Análisis de precios unitarios y presupuestos</h3>
-                             <p>El análisis de precios unitarios y la elaboración de presupuestos son herramientas clave para la planificación eficiente de proyectos. Estos procesos permiten desglosar los costos por concepto y actividad, garantizando una estimación precisa y transparente del costo total del proyecto, así como el control financiero durante su ejecución.</p>
-                             </p>
-                                <button class="btn btn-primary text-white">Leer más</button>
-                             </div>
-                         </div>
-                    </div>
-
-                 <!-- Segunda columna -->
-                
-                    <div class="col-12 col-md-12 col-lg-4 mb-3">
-                     <div class="card text-white text-center bg-car2 pb-2">
-                        <div class="card-body">
-                            <h3 class="card-title">Levantamientos y planos topográficos</h3>
-                            <p>La topografía es esencial en la ingeniería y construcción, ya que proporciona datos precisos sobre el terreno. Los levantamientos topográficos y la elaboración de planos son fundamentales para planificar proyectos, definir límites, calcular volúmenes y garantizar una ejecución acorde con las condiciones del terreno.</p>
-                            </p>
-                            <button class="btn btn-primary text-white">Leer más</button>
-                        </div>
-                    </div>
-                    </div>
-                
-                  <!--Tercera columna -->
-
-                
-                    <div class="col-12 col-md-12 col-lg-4 mb-3">
-                    <div class="card text-white text-center bg-car3 pb-2">
-                        <div class="card-body">
-                            <h3 class="card-title">Replanteo de lotes</h3>
-                            <p>El replanteo de lotes asegura que las divisiones y dimensiones de los terrenos correspondan a los planos y normativas establecidas. Este proceso es crucial para definir límites, ubicaciones de estructuras y optimizar el uso del espacio disponible en proyectos urbanísticos y de construcción.</p>
-                            </p>
-                            <button class="btn btn-primary text-white">Leer más</button>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-    <section class="section-icons">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12 col-md-12 col-lg-4 box-icons">
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-building-fill-check"></i>
-                        <div class="ms-4">
-                            <h3>Eficiencia y seguridad en las construcciones.</h3>
-                            <p>
-                               Como ingeniero civil, me enfoco en diseñar y supervisar proyectos que prioricen la seguridad y la eficiencia. Cada detalle es cuidadosamente planificado para garantizar construcciones confiables, optimizando recursos y tiempos.
-
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-4 box-icons">
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-bricks"></i>
-                        <div class="ms-4">
-                            <h3>Solidez y estabilidad en las obras.</h3>
-                            <p>
-                                Aplico cálculos estructurales precisos y utilizo materiales de calidad para garantizar que cada proyecto sea sólido y duradero. Mi prioridad es entregar resultados que brinden estabilidad y confianza.
-
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-4 box-icons">
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-bookmark-star-fill"></i>
-                        <div class="ms-4">
-                            <h3>Excelencia en el trabajo y el cumplimiento de altos estándares.</h3>
-                            <p>
-                                Me comprometo a ofrecer un servicio profesional, cumpliendo con las normativas técnicas y superando las expectativas. La dedicación, el detalle y la experiencia aseguran proyectos realizados con excelencia.
-
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-            </div>
-
-        </div>
-    </section>
 
 
     <!-- Empresas con las que ha trabajado -->
@@ -258,6 +222,120 @@
           </button>
         </div>
       </section>
+
+        <!-- Proyectos -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Proyectos</h2>
+      <div class="card-container">
+          <div class="card">
+              <img alt="#" height="200" src="#" width="300"/>
+              <div class="card-content">
+                  <div class="card-category">
+                    CONSULTA S.A. de C.V.
+                  </div>
+                  <div class="card-title">
+                    Demarcación de cuencas y subcuencas en Autocad 2000 para el diseño de las obras de
+                    drenaje menor y mayor para el proyecto “Carretera Longitudinal del Norte”
+                  </div>
+                  <div class="card-location">
+                    Metapán hasta Frontera del Amatillo
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <img alt="#" height="200" src="#" width="300"/>
+              <div class="card-content">
+                  <div class="card-category">
+                    Arq. Carlos Asturias
+                    Especialista Ambiental
+                  </div>
+                  <div class="card-title">
+                    Evaluación de quebrada colindante a
+                    Centro Comercial en el casco urbano de Santa Rosa de Lima.
+                  </div>
+                  <div class="card-location">
+                    El Sitio, municipio de
+                    Ilobasco. Carretera a Sensuntepeque, Julio 2012.
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <img alt="#" height="200" src="#" width="300"/>
+              <div class="card-content">
+                  <div class="card-category">
+                    LOTIVERSA S.A. DE C.V.
+                  </div>
+                  <div class="card-title">
+                    Elaboración de Estudios Hidrológicos e Hidráulicos para legalización de Lotificación.
+                    Elaboración de Estudios Hidrológicos e Hidráulicos para legalización de Lotificación El
+                    Tule municipio de Aguilares, departamento de San Salvador.
+                    
+                  </div>
+                  <div class="card-location">
+                    Potrero Grande municipio de El Paisnal
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="container my-5">
+    
+    <div class="card-container">
+        <div class="card">
+            <img alt="#" height="200" src="#" width="300"/>
+            <div class="card-content">
+                <div class="card-category">
+                  LOTIVERSA S.A. DE
+                  C.V.
+                </div>
+                <div class="card-title">
+                  Elaboración de Estudios Hidrológicos e Hidráulicos para legalización de Lotificación Brisas
+                  de Jiquilisco, departamento de Usulután.
+                </div>
+                <div class="card-location">
+                  Jiquilisco, departamento de Usulután.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img alt="#" height="200" src="#" width="300"/>
+            <div class="card-content">
+                <div class="card-category">
+                  CONSTRUCCIONES
+                  NABLA S.A. DE C.V.
+                </div>
+                <div class="card-title">
+                  Elaboración de Estudios Hidrológicos e y diseños hidráulicos de las redes de agua potable,
+                  negras, lluvias y en algunos casos red contra incendio desde el año 2004
+                </div>
+                <div class="card-location">
+                    ...
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img alt="#" height="200" src="#" width="300"/>
+            <div class="card-content">
+                <div class="card-category">
+                  DIVERSOS S.A. DE C.V.
+                </div>
+                <div class="card-title">
+                  Instalaciones de TCS 2 – 4 – 6 en Complejo La Gran Vía, Año 2018.
+
+                   Residencia Casa AUGSPURG Portal del Casco Norte, municipio de San Salvador. AÑO
+                  2018.
+                   Centro Escolar Maya al interior de proyecto Tuscania, municipio de Zaragoza (febrero
+                  2016).
+                </div>
+                <div class="card-location">
+                    ,,,
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
       
